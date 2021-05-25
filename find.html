@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+            <h1 class="screen-header__title">Find</h1>
+            <div class="screen-header__icons">
+                <span>
+                    <i class="fas fa-search fa-lg"></i>
+                </span>                           
+                <span>              
+                    <i class="fas fa-cog fa-lg"></i>
+                    <span class="user-component__circle user-component__circle-free"></span> 
+                </span>
+            </div>
+    </header>
+
+    <main class="main-screen">       
+        <div class="icon-row">
+            <div class="icon-row__icon">
+                <i class="fas fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-address-book"></i>
+                <span>Add by Contacts</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="fas fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="icon-row__icon">
+                <i class="far fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>  
+                <span>Go to Openchat Home
+                    <i class="fas fa-chevron-right fa-xs"></i>
+                </span>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#BTS</h5>
+                    <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                    <div class="open-post__members">
+                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MTZfMTg3%2FMDAxNTg3MDMxMTI4NzU1.evv5d825bUgeo4nmyeGPDn9A4-d5WWGqv2-idVzjLhog.06oTKxfdiFT69VymlJr1YNlkivQqRO7X-rRYmkfe3Mog.JPEG.uyenchinnn3412%2F1587030978203.jpg&type=ofullfill340_600" />
+                        <span class="open-post__member-count">802 members</span>
+                        <div class="divider"> </div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA0MDdfNzUg%2FMDAxNTg2MjY1NzI5ODYz.cYe0P2z5HbUGZ5jiadW96Kky23s6i8NCMAR9hpEDZz8g.bl04EgOK5-xWtQkfLuwcLE6X2NIlux95ssX1RJvtYM8g.JPEG.1204223%2F1586265727128.jpg&type=a340" />
+                        <div class="open-post__heart-count">
+                            <i class="fas fa-heart fa-xs"></i>
+                            <span>326</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__btn">
+            <a class="nav__link" href="friends.html">
+                <i class="far fa-user fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav__btn">
+            <a class="nav__link" href="chats.html">
+                <span class="nav__notification badge">1</span>
+                <i class="far fa-comment fa-2x"></i>
+                <!--span이 i보다 위에 위치해야 작동한다. 이유는 모름..나중에 알아보자.-->
+            </a>
+        </li>
+        <li class="nav__btn">
+            <a class="nav__link" href="find.html">
+                <i class="fas fa-search fa-2x"></i>
+            </a>
+        </li>
+        <li class="nav__btn">
+            <a class="nav__link" href="more.html">
+                <i class="fas fa-ellipsis-h fa-2x"></i>
+                <span class="nav__circle user-component__circle"> </span>
+                <!-- absolute 사용 조건 : 부모가 relative 여야한다.-->
+            </a>
+        </li>
+    </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
+
+    <script
+     src="https://kit.fontawesome.com/6478f529f2.js"
+     crossorigin="anonymous">
+    </script>
+</body>
+</html>
